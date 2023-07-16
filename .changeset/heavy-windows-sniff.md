@@ -1,0 +1,5 @@
+---
+"confold": minor
+---
+
+Confold Prototype
