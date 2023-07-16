@@ -1,5 +1,11 @@
 # confold
 
+## 0.1.2
+
+### Patch Changes
+
+-   [`db20f01`](https://github.com/JacobLinCool/confold/commit/db20f016da713b26f8f44240116ce5b2bfb8e363) Thanks [@JacobLinCool](https://github.com/JacobLinCool)! - Add two-way align command
+
 ## 0.1.1
 
 ### Patch Changes
