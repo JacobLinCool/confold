@@ -47,3 +47,14 @@ Leverage git hooks to automate the process of syncing configuration file states.
 Include `confold align` in the `pre-commit` hook to coordinate configuration file states before committing.
 
 Add `confold align` to the `post-checkout` hook to synchronize configuration file states after checking out.
+
+## Examples
+
+### [Watermark App](https://github.com/JacobLinCool/watermark-app)
+
+Watermark App is a SvelteKit application that uses lots of configuration files for dev servers, etc. Confold is used to manage these configuration files.
+
+| Before                                 | After                                |
+| -------------------------------------- | ------------------------------------ |
+| ![before](images/watermark-before.png) | ![after](images/watermark-after.png) |
+| 25 top-level entries                   | 14 top-level entry                   |
