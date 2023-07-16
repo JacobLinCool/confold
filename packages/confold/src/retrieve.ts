@@ -13,6 +13,8 @@ export function retrieve(dir: string, checked: CheckResult): void {
 
 	for (const item of retrievables) {
 		const [name, target] = map(item.name);
-		fs.copySync(path.join(dir, target), path.join(dir, name));
+		if (item.uptodate === true) {
+			fs.copySync(path.join(dir, target), path.join(dir, name));
+		}
 	}
 }

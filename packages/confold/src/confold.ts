@@ -107,4 +107,29 @@ program
 		}
 	});
 
+program
+	.command("align")
+	.description(
+		"sync configuration files between confold and project, retrieve if confold is ahead",
+	)
+	.argument("[dir]", "Directory to align", process.cwd())
+	.action((dir: string) => {
+		try {
+			const result = check(dir);
+			if (result.init === false) {
+				console.log(chalk.yellow("confold not initialized, nothing to align"));
+				return;
+			}
+
+			retrieve(dir, result);
+			sync(dir, check(dir));
+			console.log(chalk.green("configuration files aligned between confold and project"));
+		} catch (e) {
+			if (e instanceof Error) {
+				console.error(chalk.red(e.message));
+			}
+			process.exit(1);
+		}
+	});
+
 program.parse(process.argv);

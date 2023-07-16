@@ -1,6 +1,6 @@
 {
-  "entryPoints": ["packages/*"],
-  "name": "confold",
-  "entryPointStrategy": "packages",
-  "includeVersion": true
+	"entryPoints": ["packages/*"],
+	"name": "confold",
+	"entryPointStrategy": "packages",
+	"includeVersion": true
 }

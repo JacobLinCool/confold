@@ -26,26 +26,24 @@ To have Confold manage a configuration file, follow these steps:
 
 1. Add the configuration file to `.gitignore` for exclusion.
 2. Append the configuration file name to `.confold/.confold`.
-3. Execute `confold sync` to align the configuration state with the `.confold` directory.
+3. Execute `confold align` to align the configuration state with the `.confold` directory.
 
-> `confold sync` harmonizes the configuration file state from the project root with the `.confold` directory.
+> `confold align` harmonizes the configuration file state between the project root and the `.confold` directory.
 
 ### Retrieval
 
-To commence work on a project, execute `confold retrieve`. This action syncs the configuration state from the `.confold` directory to the project root.
-
-> `confold retrieve` coordinates the configuration file state from the `.confold` directory to the project root.
+To commence work on a project, execute `confold align`. This action syncs the configuration state from the `.confold` directory to the project root.
 
 ### Editing
 
-Once you've retrieved the configuration file state, you're free to edit the configuration file as necessary. 
+Once you've retrieved the configuration file state, you're free to edit the configuration file as necessary.
 
-Remember to execute `confold sync` to ensure the updated configuration state is echoed back to the `.confold` directory after your edits.
+Remember to execute `confold align` to ensure the updated configuration state is echoed back to the `.confold` directory after your edits.
 
 ## Git Hooks
 
 Leverage git hooks to automate the process of syncing configuration file states.
 
-Include `confold sync` in the `pre-commit` hook to coordinate configuration file states before committing.
+Include `confold align` in the `pre-commit` hook to coordinate configuration file states before committing.
 
-Add `confold retrieve` to the `post-checkout` hook to synchronize configuration file states after checking out.
+Add `confold align` to the `post-checkout` hook to synchronize configuration file states after checking out.
