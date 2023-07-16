@@ -1,0 +1,53 @@
+{
+	"name": "confold",
+	"description": "Cleaning Up Config Chaos with Confold.",
+	"version": "0.0.0",
+	"author": "JacobLinCool <jacob@csie.cool> (https://jacoblin.cool)",
+	"license": "MIT",
+	"keywords": [],
+	"type": "module",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"bin": {
+		"confold": "./dist/confold.js"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"build:docs": "typedoc --out docs src"
+	},
+	"devDependencies": {
+		"@types/debug": "^4.1.8",
+		"@types/fs-extra": "^11.0.1",
+		"tsup": "^7.1.0",
+		"typedoc": "^0.24.8",
+		"typescript": "^5.1.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JacobLinCool/confold.git"
+	},
+	"bugs": {
+		"url": "https://github.com/JacobLinCool/confold/issues"
+	},
+	"homepage": "https://jacoblincool.github.io/confold",
+	"typedoc": {
+		"entryPoint": "./src/index.ts"
+	},
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"commander": "^11.0.0",
+		"debug": "^4.3.4",
+		"fs-extra": "^11.1.1",
+		"ignore": "^5.2.4"
+	}
+}
