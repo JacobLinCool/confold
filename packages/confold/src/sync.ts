@@ -13,6 +13,8 @@ export function sync(dir: string, checked: CheckResult) {
 
 	for (const item of tracked) {
 		const [name, target] = map(item.name);
-		fs.copySync(path.join(dir, name), path.join(dir, target));
+		if (item.uptodate === false) {
+			fs.copySync(path.join(dir, name), path.join(dir, target));
+		}
 	}
 }
