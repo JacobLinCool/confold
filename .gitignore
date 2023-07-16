@@ -137,10 +137,10 @@ lib
 docs
 
 # managed by confold
-# /.npmrc
-# /.prettierrc.yml
-# /jest.config.js
-# /tsconfig.json
-# /pnpm-lock.yaml
-# /pnpm-workspace.yaml
-# /typedoc.json
+/.npmrc
+/.prettierrc.yml
+/jest.config.js
+/tsconfig.json
+/pnpm-lock.yaml
+/pnpm-workspace.yaml
+/typedoc.json

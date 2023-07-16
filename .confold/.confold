@@ -1,0 +1,10 @@
+# You can add files to this file to add them to confold targets.
+# This file uses the same syntax as .gitignore.
+
+.npmrc
+.prettierrc.yml
+jest.config.js
+tsconfig.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+typedoc.json
