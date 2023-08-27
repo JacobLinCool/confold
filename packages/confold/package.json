@@ -29,7 +29,7 @@
 		"@types/debug": "^4.1.8",
 		"@types/fs-extra": "^11.0.1",
 		"tsup": "^7.1.0",
-		"typedoc": "^0.24.8",
+		"typedoc": "^0.25.0",
 		"typescript": "^5.1.6"
 	},
 	"repository": {
